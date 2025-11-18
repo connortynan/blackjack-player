@@ -31,12 +31,12 @@ For example, if your name is Walter Goodzey, you would use:
 git mv player walter-goodzey
 ```
 
-Doing first name and last initial is also fine (`walter-g`).
+Doing first name and last initial or github username is also fine (e.g., `walter-g`, `wimos-ai`).
 
 ### Guidelines
 
 - Use all **lowercase**
-- use **hyphens** instead of spaces (`walter-goodzey`)
+- use **hyphens** instead of spaces (e.g., `walter-goodzey`)
 - Do **not** delete and recreate the directory, use `git mv` to have a clean
 version history
 
