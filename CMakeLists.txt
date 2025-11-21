@@ -12,4 +12,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 add_compile_options(-Wall -Wextra -Werror -Wno-unused-parameter -Wno-unused-function -O2)
 
 # Add player subdirectory
-add_subdirectory(player)
+foreach(PLAYER_CPP ${PLAYER_DIRS})
+  get_filename_component(PLAYER_DIR ${PLAYER_CPP} DIRECTORY)
+  get_filename_component(PLAYER_NAME ${PLAYER_DIR} NAME)
+  add_subdirectory(${PLAYER_NAME})
+endforeach()
